@@ -1,3 +1,5 @@
+
+
 function Header() {
   return (
     <header>
@@ -11,6 +13,14 @@ function Header() {
   );
 }
 
+function CoreConcepts(props){
+  return ( <li>
+  <img src="" alt="" />
+  <h1>{props.Title}</h1>
+  <h4>{props.description} </h4>
+  </li>)
+}
+
 function App() {
   return (
     <div>
@@ -18,6 +28,7 @@ function App() {
       <main>
         <h2>Time to get started!</h2>
       </main>
+      <CoreConcepts/>
     </div>
   );
 }
